@@ -40,7 +40,7 @@ h3 {
 	color: #ffffff;
 	margin: 0;
 	padding: 30px 0 5px 0;
-	font-weight: 300;
+	font-weight:300;
 	text-align: center;
 }
 
@@ -59,7 +59,7 @@ h5 {
 	color: #ffffff;
 	margin: 0;
 	padding: 10px 0;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 32px;
 }
 
@@ -228,6 +228,13 @@ a:active.buttons {
 	float: left;
 }
 
+.feature-box:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-ms-transform: translate(0,2px); /* IE 9 */
+	-webkit-transform: translate(0,2px); /* Chrome, Safari, Opera */
+	transform: translate(0,2px);
+}
+
 .feature-box p {
 	color: #ffffff;
 }
@@ -238,6 +245,13 @@ a:active.buttons {
 	height: 150px;
 	margin: 7px;
 	float: left;
+}
+
+#stamp-box:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	-ms-transform: translate(0,2px); /* IE 9 */
+	-webkit-transform: translate(0,2px); /* Chrome, Safari, Opera */
+	transform: translate(0,2px);
 }
 
 #stamp-box h4 {
@@ -337,6 +351,18 @@ img.icon-center48 {
 	text-align: left;
 }
 
+/*
+.steps:hover img {
+	-ms-transform: translate(0,2px);
+	-webkit-transform: translate(0,2px);
+	transform: translate(0,2px);
+}
+*/
+
+.steps:hover h4 {
+	color: #1b75bb;
+}
+
 
 /* BOOK EXAMPLES */
 
@@ -403,7 +429,8 @@ img.icon-center48 {
 
 .features img {
 	float: left;
-	padding: 0 20px 90px 0;
+	padding: 0;
+	margin: 0 20px 90px 0; 
 	border: none;
 }
 
@@ -414,9 +441,19 @@ img.icon-center48 {
 }
 
 .features p {
-	margin: 0;
-	padding: 5px 40px 40px 0;
+	margin: 0 0 20px 0;
+	padding: 5px 40px 20px 0;
 	text-align: justify;
+}
+
+.features:hover h4 {
+	color: #00b5a5;
+}
+
+.features:hover img {
+	-ms-transform: translate(0,2px); /* IE 9 */
+	-webkit-transform: translate(0,2px); /* Chrome, Safari, Opera */
+	transform: translate(0,2px);
 }
 
 #link-example {
@@ -518,10 +555,16 @@ footer {
 }
 
 #linkbox img {
-	padding: 10px 10px 20px;
+	margin: 10px 10px 20px;
+	padding: 0;
 	float: left;
 	border: none;
 }
+
+#linkbox img:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
 
 #credits {
 	background-color: #555555;
